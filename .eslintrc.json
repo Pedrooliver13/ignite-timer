@@ -20,7 +20,9 @@
           { "path": "date-fns" },
           { "path": "vite" },
           { "path": "styled-components" },
-          { "path": "react-router-dom" }
+          { "path": "react-router-dom" },
+          { "path": "@hookform" },
+          { "path": "zod" }
         ],
         "Routes": [{ "path": "router" }],
         "Pages": [{ "path": "pages" }],
