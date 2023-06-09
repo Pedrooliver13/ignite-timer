@@ -10,6 +10,7 @@
   "plugins": ["react-refresh", "grouped-import"],
   "rules": {
     "@typescript-eslint/explicit-module-boundary-types": "error",
+    "@typescript-eslint/explicit-function-return-type": "error",
     "@typescript-eslint/no-empty-interface": 0,
     "react-refresh/only-export-components": "warn",
     "grouped-import/group": [
@@ -22,7 +23,8 @@
           { "path": "styled-components" },
           { "path": "react-router-dom" },
           { "path": "@hookform" },
-          { "path": "zod" }
+          { "path": "zod" },
+          { "path": "date-fns" }
         ],
         "Routes": [{ "path": "router" }],
         "Pages": [{ "path": "pages" }],
