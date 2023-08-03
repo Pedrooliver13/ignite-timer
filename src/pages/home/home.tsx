@@ -1,11 +1,9 @@
 // Packages
 import { ReactElement } from "react";
-import { HandPalm, Play as PlayIcon } from "phosphor-react";
 import { FormProvider, useForm } from "react-hook-form";
+import { HandPalm as HandPalmIcon, Play as PlayIcon } from "phosphor-react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as zod from "zod";
-
-// import { differenceInSeconds } from "date-fns";
 
 // Contexts
 import { useCyclesContext } from "contexts/useCycleContext";
@@ -58,7 +56,7 @@ export const Home = (): ReactElement => {
 
         {activeCycle ? (
           <Styled.StopCountdownButton onClick={interruptCycle} type="submit">
-            <HandPalm size={24} />
+            <HandPalmIcon size={24} />
             Interromper
           </Styled.StopCountdownButton>
         ) : (
