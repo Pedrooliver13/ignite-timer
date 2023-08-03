@@ -1,13 +1,20 @@
 // Packages
-import { ReactElement } from 'react';
+import { ReactElement } from "react";
+
+// Contexts
+import { useCyclesContext } from "contexts/useCycleContext";
 
 // Styles
-import * as Styled from './styles';
+import * as Styled from "./styles";
 
 export const History = (): ReactElement => {
+  const { activeCycle } = useCyclesContext();
+
   return (
     <Styled.HistoryContainer>
       <h1>Meu histórico</h1>
+
+      <div>{JSON.stringify(activeCycle)}</div>
 
       <Styled.HistoryList>
         <table>
