@@ -10,13 +10,11 @@ import { useCyclesContext } from "contexts/useCycleContext";
 import * as Styled from "./styles";
 
 export const History = (): ReactElement => {
-  const { activeCycle, cycles } = useCyclesContext();
+  const { cycles } = useCyclesContext();
 
   return (
     <Styled.HistoryContainer>
       <h1>Meu histórico</h1>
-
-      <div>{JSON.stringify(activeCycle)}</div>
 
       <Styled.HistoryList>
         <table>

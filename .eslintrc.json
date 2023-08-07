@@ -19,6 +19,7 @@
           { "path": "react" },
           { "path": "date-fns" },
           { "path": "vite" },
+          { "path": "immer" },
           { "path": "styled-components" },
           { "path": "react-router-dom" },
           { "path": "@hookform" },
@@ -27,6 +28,7 @@
         ],
         "Routes": [{ "path": "router" }],
         "Pages": [{ "path": "pages/" }],
+        "Reducers": [{ "path": "reducers" }],
         "Components": [{ "path": "components" }],
         "Contexts": [{ "path": "contexts" }],
         "Styles": [
