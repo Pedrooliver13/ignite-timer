@@ -8,6 +8,7 @@ import {
   useReducer,
   useState,
 } from "react";
+import { differenceInSeconds } from "date-fns";
 
 // Reducers
 import { Cycle, cyclesReducers } from "reducers/cycles/reducer";
@@ -48,7 +49,7 @@ export const CycleProvider = ({
       cycles: [],
       activeCycleId: null,
     },
-    () => {
+    (initialState) => {
       const storedStateAsJson = localStorage.getItem(
         "@ignite-timer:cycles-state-1.0.0"
       );
@@ -56,9 +57,17 @@ export const CycleProvider = ({
       if (storedStateAsJson) {
         return JSON.parse(storedStateAsJson);
       }
+
+      return initialState;
     }
   );
-  const [amountSecondPassed, setAmountSecondsPassed] = useState(0);
+  const [amountSecondPassed, setAmountSecondsPassed] = useState(() => {
+    if (activeCycle) {
+      return differenceInSeconds(new Date(), new Date(activeCycle.startDate));
+    }
+
+    return 0;
+  });
   const { cycles, activeCycleId } = cyclesState;
 
   useEffect(() => {

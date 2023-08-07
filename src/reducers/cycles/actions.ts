@@ -24,8 +24,8 @@ export const addNewCycleAction = (newCycle: Cycle): ActionResponse<Cycle> => {
 };
 
 export const interruptCurrentCycleAction = (
-  activeCycleId: string
-): ActionResponse<string> => {
+  activeCycleId: string | null
+): ActionResponse<string | null> => {
   return {
     type: ActionTypes.INTERRUPT_CURRENT_CYCLE,
     payload: {

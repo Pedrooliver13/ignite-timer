@@ -32,7 +32,7 @@ export const History = (): ReactElement => {
                 <td>{cycle.task}</td>
                 <td>{cycle.minutesAmount} minuto(s)</td>
                 <td>
-                  {formatDistanceToNow(cycle.startDate, {
+                  {formatDistanceToNow(new Date(cycle.startDate), {
                     addSuffix: true,
                     locale: ptBR,
                   })}
