@@ -1,5 +1,5 @@
-![image](https://github.com/Pedrooliver13/ignite-timer/assets/56042296/097d4006-ce6a-4020-ab71-87e48ccc1306)
 
+![image](https://github.com/Pedrooliver13/ignite-timer/assets/56042296/286b676f-eb11-4cc4-99b8-110fac729382)
 
 <p align="center">
   <a href="#information_source-how-to-use">How To Use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
